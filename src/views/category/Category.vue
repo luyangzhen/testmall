@@ -1,8 +1,8 @@
 <template>
   
   <div class="wrapper">
-    <!-- <h2>分类</h2> -->
-    <ul class="content">
+    <h2>分类</h2>
+    <!-- <ul class="content">
       <li>分类1</li>
       <li>分类2</li>
       <li>分类3</li>
@@ -103,7 +103,7 @@
       <li>分类98</li>
       <li>分类99</li>
       <li>分类100</li>
-    </ul>
+    </ul> -->
   </div>
 </template>
 
@@ -117,19 +117,19 @@ export default {
       }
     },
     // 组件创建完后调用
-    mounted() { 
-      this.scroll = new BScroll(document.querySelector('.wrapper'), {
-        // 3可以监听惯性的数据
-        probeType: 3,
-        pullUpLoad: true
-      })
-      this.scroll.on('scroll', (position) => {
-        console.log(position);
-      })
-      this.scroll.on('pullingUp', () => {
-        console.log('上拉加载更多');
-      })
-    }
+    // mounted() { 
+    //   this.scroll = new BScroll(document.querySelector('.wrapper'), {
+    //     // 3可以监听惯性的数据
+    //     probeType: 3,
+    //     pullUpLoad: true
+    //   })
+    //   this.scroll.on('scroll', (position) => {
+    //     console.log(position);
+    //   })
+    //   this.scroll.on('pullingUp', () => {
+    //     console.log('上拉加载更多');
+    //   })
+    // }
 }
 </script>
 
